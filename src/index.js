@@ -15,27 +15,26 @@ class Square extends React.Component {
     renderSquare(i) {
       return <Square value={i}/>;
     }
-  
     render() {
-      const status = 'Next player: X';
+      const status = 'Next player: You';
   
       return (
         <div>
           <div className="status">{status}</div>
           <div className="board-row">
-            {this.renderSquare(0)}
-            {this.renderSquare(1)}
-            {this.renderSquare(2)}
+            {this.renderSquare("う")}
+            {this.renderSquare("し")}
+            {this.renderSquare("た")}
           </div>
           <div className="board-row">
-            {this.renderSquare(3)}
-            {this.renderSquare(4)}
-            {this.renderSquare(5)}
+            {this.renderSquare("ぷ")}
+            {this.renderSquare("に")}
+            {this.renderSquare("き")}
           </div>
           <div className="board-row">
-            {this.renderSquare(6)}
-            {this.renderSquare(7)}
-            {this.renderSquare(8)}
+            {this.renderSquare("あ")}
+            {this.renderSquare("く")}
+            {this.renderSquare("ん")}
           </div>
         </div>
       );
@@ -51,7 +50,7 @@ class Square extends React.Component {
           </div>
           <div className="game-info">
             <div>{/* status */}</div>
-            <ol>{}</ol>
+            <ol>{/* TODO */}</ol>
           </div>
         </div>
       );
